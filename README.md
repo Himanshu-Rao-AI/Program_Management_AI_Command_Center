@@ -39,7 +39,7 @@ flowchart LR
     subgraph Server["Node.js Backend (proxy)"]
         API["REST API Layer"]
         Agents["AI Agent Registry<br/>(Blocker Scan · Weekly Report ·<br/>Risk Summary · Standup Prep ·<br/>Dependency Check · Release Readiness)"]
-        Creds[("Credentials<br/>.env — never sent to browser")]
+        
     end
 
     subgraph External["External Services"]
@@ -60,7 +60,7 @@ flowchart LR
     style External fill:#fff7ed,stroke:#f97316,color:#7c2d12
 ```
 
-**Key design choice:** the browser never talks to Jira, Confluence, or OpenAI directly — every request goes through the Node backend, which is the only place API keys and tokens live. This keeps the dashboard safely shareable/screenshot-able without any risk of leaking credentials.
+**Key design choice:** the browser never talks to Jira, Confluence, or OpenAI directly — every request goes through the Node backend. This keeps the dashboard safely shareable/screenshot-able without any risk of leaking credentials.
 
 ---
 
