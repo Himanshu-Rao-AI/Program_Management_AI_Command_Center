@@ -2,15 +2,13 @@
 
 An AI-assisted **Technical Program Manager (TPM) copilot** built for large-scale, multi-workstream programs. It sits on top of live Jira + Confluence data and gives a TPM (or an engineering leadership team) a single command center for sprint health, blockers, cross-team dependencies, backlog generation, and executive reporting — with an AI "Chief of Staff" layer that proactively surfaces what needs attention today.
 
-> This repo is a **showcase** of the project — architecture, design, and a working demo. The application source (backend + Jira/OpenAI integration code) is kept in a private repository since it's wired to live program data and API credentials.
-
+> This repo is a **showcase** of the project — architecture, design, and a working demo. 
 ---
 
 ## Why this exists
 
 Running a large modernization program across 6+ workstreams (UI, backend APIs, third-party integrations, DevOps, QA, and change management) generates a constant stream of signals — blocked tickets, slipping dependencies, stale sprints — that a human TPM has to manually triage every day. This project explores how far an AI-assisted workflow can go in automating that triage: pulling live data from Jira, reasoning over it the way a senior TPM would, and turning it into ready-to-use artifacts (status reports, escalation notes, generated backlog items) instead of just a dashboard of numbers.
 
-It was built end-to-end using **AI-assisted development** (Claude Code) — from scaffolding the backend proxy and dashboard UI, to designing the agent prompts that turn raw Jira data into executive-ready analysis.
 
 ---
 
