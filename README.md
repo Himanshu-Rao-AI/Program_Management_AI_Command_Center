@@ -50,7 +50,6 @@ flowchart LR
 
     UI <-->|"HTTPS (local network)"| API
     API --> Agents
-    API --> Creds
     Agents -->|"live JQL queries"| Jira
     API -->|"publish reports"| Confluence
     Agents -->|"structured prompts"| OpenAI
